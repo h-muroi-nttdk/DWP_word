@@ -1,0 +1,176 @@
+/* 全体レイアウト */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 大見出し用のスタイル */
+.large-heading {
+    font-size: 3em;         /* フォントサイズを大きく設定 */
+    font-weight: bold;      /* 太字に設定 */
+    text-align: center;     /* 中央揃え */
+    margin: 20px 0;         /* 上下のマージンを調整 */
+    color: #333;            /* 色を濃いグレーに設定（黒に近い色） */
+    letter-spacing: 2px;    /* 文字間隔を広げる */
+    text-transform: uppercase; /* 文字を大文字に変換 */
+    font-family: 'Arial', sans-serif; /* フォントファミリーを指定 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 影をつける */
+}
+
+
+/* 画像の中央配置 */
+img {
+    display: block;           /* 画像をブロック要素にして中央寄せを可能にする */
+    margin: 0 auto;           /* 左右のマージンを自動で調整し中央寄せ */
+    max-width: 100%;          /* 画像の横幅を親要素に合わせる */
+    height: auto;             /* 高さを自動調整 */
+}
+
+.no-style {
+    all: unset;
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h5 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+ol {
+    margin-left: 20px;
+    list-style-type: decimal;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+/* 入力フォームの中央配置 */
+#input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 中央寄せ */
+    justify-content: center;
+}
+
+input[type="text"], input[type="submit"] {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 遊び方セクション */
+#how-to-play {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#how-to-play h2 {
+    color: #4CAF50;
+}
+
+#how-to-play ol {
+    padding-left: 20px;
+}
+
+/* 結果セクション */
+#result {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#result h2 {
+    color: #4CAF50;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li span {
+    margin-right: 10px;
+}
+
+/* ヘッダーとタイトル */
+#title {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="submit"] {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    #wrapper {
+        padding: 15px;
+    }
+}
